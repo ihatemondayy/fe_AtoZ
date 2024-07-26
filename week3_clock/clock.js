@@ -8,9 +8,9 @@ function clock() {
     let dateStr = `${year}-${month}-${day} [${dayOfWeek}]`;
     document.getElementById("dateStr").innerHTML = dateStr;
 
-    let hours = date.getHours().toString();
-    let minutes = date.getMinutes().toString();
-    let seconds = date.getSeconds().toString();
+    let hours = date.getHours().toString().padStart(2, '0');
+    let minutes = date.getMinutes().toString().padStart(2, '0');
+    let seconds = date.getSeconds().toString().padStart(2, '0');
     let timeStr = `
         <span class="galmuri14">${hours[0]}</span>
         <span class="baskervville">${hours[1]}</span>:
