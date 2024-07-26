@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="display">
+        <input type="text" id="history" readonly>
+        <input type="text" id="result" readonly>
+    </div>
+    <div class="buttons">
+        <button class="btn" id="clear" onclick="reset()">C</button>
+        <button class="btn" id="backspace" onclick="backspace()">CE</button>
+        <button class="empty"></button>
+        <button class="btn-operator" id="divide" onclick="calc('/')">/</button>
+        <button class="btn-number" onclick="calc(7)">7</button>
+        <button class="btn-number" onclick="calc(8)">8</button>
+        <button class="btn-number" onclick="calc(9)">9</button>
+        <button class="btn-operator" id="multiply" onclick="calc('*')">*</button>
+        <button class="btn-number" onclick="calc(4)">4</button>
+        <button class="btn-number" onclick="calc(5)">5</button>
+        <button class="btn-number" onclick="calc(6)">6</button>
+        <button class="btn-operator" id="minus" onclick="calc('-')">-</button>
+        <button class="btn-number" onclick="calc(1)">1</button>
+        <button class="btn-number" onclick="calc(2)">2</button>
+        <button class="btn-number" onclick="calc(3)">3</button>
+        <button class="btn-operator" id="plus" onclick="calc('+')">+</button>
+        <button class="empty"></button>
+        <button class="btn-number" onclick="calc(0)">0</button>
+        <button class="btn" id="decimal" onclick="calc('.')">.</button>
+        <button class="btn-operator" id="equals" onclick="resultEval()">=</button>
+    </div>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+</html>
