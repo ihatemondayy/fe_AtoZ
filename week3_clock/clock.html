@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="clock.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+        @import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
+    </style>
+</head>
+<body>
+	<div class="left-container">
+        <div class="head-container">
+            <h1 class="h1">WHAT TIME IS IT?</h1>
+            <div class="heart-container">
+                <img src="./components/pixelHeart.png" class="heart" alt="heart">
+                <img src="./components/pixelHeart.png" class="heart" alt="heart">
+                <img src="./components/pixelHeart.png" class="heart" alt="heart">
+                <img src="./components/pixelHeart.png" class="heart" alt="heart">
+                <img src="./components/pixelHeart.png" class="heart" alt="heart">
+            </div>
+        </div>
+        <div class="clock-container">
+            <img src="./components/powerpuff_hani.png" class="hani" alt="powerpuffgirl_img">
+            <div class="clock-wrapper">
+                <span id="dateStr" class="dateStr"></span>
+                <span id="timeStr" class="timeStr"></span>
+            </div>
+        </div>
+        <div class="addAlert-container">
+            <input type="number" id="hours-input" placeholder="HH" min="0" max="23" class="time-input">
+            <input type="number" id="minutes-input" placeholder="MM" min="0" max="59" class="time-input">
+            <input type="number" id="seconds-input" placeholder="SS" min="0" max="59" class="time-input">
+            <button class="addAlert-btn" onclick="addAlert()">+</button>
+        </div>
+    </div>
+    <div class="right-container">
+        <div class="alertList-container" id="alertListContainer"></div>
+        <img src="./components/addAlert.svg" class="addAlert-img" />
+    </div>
+</body>
+<script src="clock.js"></script>
+</html>
