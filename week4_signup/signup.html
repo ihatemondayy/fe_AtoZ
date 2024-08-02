@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <h1 class="title-text">SIGN UP</h1>
+        <div class="input-wrapper">
+            <fieldset>
+                <input type="text" id="email" placeholder="Email">
+            </fieldset>
+            <div class="failuremsg-email hidden">이미 가입된 이메일입니다.</div>
+            <div class="failuremsg-email2 hidden">이메일 형식이 올바르지 않습니다.</div>
+
+            <fieldset>
+                <input type="password" id="password" placeholder="Password">
+            </fieldset>
+            <div class="failuremsg-password hidden">비밀번호는 8자 이상의 영문, 숫자, 특수문자여야 합니다.</div>
+
+            <fieldset>
+                <input type="password" id="password-check" placeholder="Password check">
+            </fieldset>
+            <div class="failuremsg-pwcheck hidden">비밀번호가 일치하지 않습니다.</div>
+        </div>
+        <button id="signup" disabled>회원가입</button>
+    </div>
+</body>
+<script src="signup.js"></script>
+</html>

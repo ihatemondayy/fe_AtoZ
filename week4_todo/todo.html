@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="todo.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="todo-container">
+	    <div class="calendar-wrapper">
+            <div class="calendar-header">
+                <button id="prev-button" onclick="prevMonth()">&lt;</button>
+                <div class="year-month"></div>
+                <button id="next-button" onclick="nextMonth()">&gt;</button>
+            </div>
+            <div class="calendar">
+                <div class="days">
+                    <div class="day">일</div>
+                    <div class="day">월</div>
+                    <div class="day">화</div>
+                    <div class="day">수</div>
+                    <div class="day">목</div>
+                    <div class="day">금</div>
+                    <div class="day">토</div>
+                </div>
+                <div class="dates"></div>
+            </div>
+        </div>
+        <div class="todo-wrapper">
+            <div class="todo-input-wrapper">
+                <input type="text" id="todo-input" placeholder="할 일을 입력하세요">
+                <button id="todo-button" onclick="addTodo()">추가</button>
+            </div>
+            <ul class="todo-list"></ul>
+        </div>
+    </div>
+</body>
+<script src="todo.js"></script>
+</html>
